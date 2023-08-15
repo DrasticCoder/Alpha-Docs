@@ -32,7 +32,6 @@ export default function TextEditor() {
     } 
   }, [quill, socket])
 
-  //to change the text in the editor when message is receive 
   useEffect(() => {
     if(socket == null || quill == null) return
     const handler = delta => {
